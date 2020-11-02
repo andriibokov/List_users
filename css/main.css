@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+/* scrollbar */
+::-webkit-scrollbar { width: 4px; height: 3px;}
+::-webkit-scrollbar-track {  background-color: #1C2540;};
+::-webkit-scrollbar-track-piece { background-color: #6b6f88;}
+::-webkit-scrollbar-thumb {background-color: #6b6f88;}
+::-webkit-scrollbar-corner { background-color: #6b6f88;}
+::-webkit-resizer { background-color: #6b6f88;}
+
+body{
+    color: #BBB9D1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style-type: none
+}
+ul{
+    margin-left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-basis: 1440px;
+    height: 100vh;
+    background: #242E4C;
+    border-radius: 0 15px 15px 0;
+    padding: 60px 5px 5px 5px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1130px;
+}
+.search__box{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #171F38;
+    margin-bottom: 46px;
+}
+.search__img{
+    width: 16px;
+    height: 16px;
+    margin: 0 15px;
+}
+#users__search{
+    display: flex;
+    flex-basis: 100%;
+    height: 57px;
+    color: #BBB9D1;
+    font-family: 'Mulish', sans-serif;
+    background: #242E4C;
+    outline:none;
+    border: none;
+}
+.users__box{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    overflow: auto;
+}
+.user__remove{
+    background: #1C2540;
+    outline:none;
+    padding: 0;
+    width: 43px;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid #1C2540;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.user__remove img{
+    width: 30px;
+}
+.users__title{
+    margin-right: 43px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.user__item{
+    background: #1C2540;
+    border-radius: 5px;
+    border-left: 5px solid #81CEA5;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.user__item,.users__title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user__info{
+    flex-basis: 25%;
+}
