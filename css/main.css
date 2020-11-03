@@ -115,3 +115,12 @@ section{
 .user__info{
     flex-basis: 25%;
 }
+.user__remove{
+    visibility: hidden;
+}
+.active{
+    background: #161F3B;
+}
+.list__empty{
+    margin: 20px 10px;
+}

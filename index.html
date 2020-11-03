@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>List Users</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Mulish&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -13,7 +12,7 @@
         <div class="container">
             <div class="search__box">
                 <img class="search__img" src="./image/search.svg" alt="search">
-                <input type="search" id="users__search" onkeyup="myFunction()" placeholder="Search..." title="User Search">
+                <input type="text" id="users__search" onkeyup="search(this.value)" placeholder="Search..." title="User Search">
             </div>
             <div class="users__title">
                 <span class="user__info">Name</span>
@@ -22,16 +21,8 @@
                 <span class="user__info">City</span>
             </div>
             <div class="users__box">
-                <ul id="users">
-                    <li class="user__item">
-                        <span class="user__info">Name</span>
-                        <span class="user__info">Email</span>
-                        <span class="user__info">Company</span>
-                        <span class="user__info">City</span>
-                        <button class="user__remove" onclick="userRemove()">
-                            <img src="./image/user_remove.svg" alt="image user remove">
-                        </button>
-                    </li>
+                <ul id="users" >
+                    <div class="list__empty">User list is empty.</div>
                 </ul>
             </div>
         </div>
